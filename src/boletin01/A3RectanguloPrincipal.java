@@ -1,7 +1,5 @@
 package boletin01;
 
-import java.util.Arrays;
-
 public class A3RectanguloPrincipal {
 
 	public static void main(String[] args) {
@@ -18,21 +16,45 @@ public class A3RectanguloPrincipal {
 		 * -----------------------------------------------------------------------------
 		 */
 
-		A3Rectangulo punto1 = new A3Rectangulo();
-		A3Rectangulo punto2 = new A3Rectangulo();
+		A3Rectangulo rectangulo1 = new A3Rectangulo();
+		A3Rectangulo rectangulo2 = new A3Rectangulo();
 
-		int[] array = new int[8];
+		int[] arrayr1 = new int[2];
+		int[] arrayr2 = new int[2];
 
-		array[0] = 0;
-		array[1] = 0;
-		array[2] = 5;
-		array[3] = 5;
-		array[4] = 7;
-		array[5] = 9;
-		array[6] = 2;
-		array[7] = 3;
+		rectangulo1.x1 = 0;
+		rectangulo1.y1 = 0;
+		rectangulo1.x2 = 5;
+		rectangulo1.y2 = 5;
 
-		System.out.println(Arrays.toString(array));
+		rectangulo2.x1 = 7;
+		rectangulo2.y1 = 9;
+		rectangulo2.x2 = 2;
+		rectangulo2.y2 = 3;
+
+		arrayr1[0] = rectangulo1.x1 > rectangulo1.x2 ? rectangulo1.x1 - rectangulo1.x2
+				: rectangulo1.x2 - rectangulo1.x1;
+		arrayr1[1] = rectangulo1.y1 > rectangulo1.x2 ? rectangulo1.y1 - rectangulo1.y2
+				: rectangulo1.y2 - rectangulo1.y1;
+
+		arrayr2[0] = rectangulo2.x1 > rectangulo2.x2 ? rectangulo2.x1 - rectangulo2.x2
+				: rectangulo2.x2 - rectangulo2.x1;
+		arrayr2[1] = rectangulo2.y1 > rectangulo2.y2 ? rectangulo2.y1 - rectangulo2.y2
+				: rectangulo2.y2 - rectangulo2.y1;
+
+		System.out.println("PRIMER RECTÁNGULO");
+		System.out.println("Coordenadas: (" + rectangulo1.x1 + "," + rectangulo1.y1 + ") (" + rectangulo1.x2 + ","
+				+ rectangulo1.y2 + ")");
+		System.out.println("Perímetro: " + (arrayr1[0] * 2 + arrayr1[1] * 2));
+		System.out.println("Área: " + (arrayr1[0] * arrayr1[1]));
+
+		System.out.println();
+
+		System.out.println("SEGUNDO RECTÁNGULO");
+		System.out.println("Coordenadas: (" + rectangulo2.x1 + "," + rectangulo2.y1 + ") (" + rectangulo2.x2 + ","
+				+ rectangulo2.y2 + ")");
+		System.out.println("Perímetro: " + (arrayr2[0] * 2 + arrayr2[1] * 2));
+		System.out.println("Área: " + (arrayr2[0] * arrayr2[1]));
 	}
 
 }
