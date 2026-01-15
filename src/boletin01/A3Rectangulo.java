@@ -14,6 +14,7 @@ public class A3Rectangulo {
 	 * -----------------------------------------------------------------------------
 	 */
 
+	// Variables para los atributos
 	int x1;
 	int y1;
 

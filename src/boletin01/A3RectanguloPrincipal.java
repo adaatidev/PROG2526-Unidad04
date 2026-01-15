@@ -16,12 +16,17 @@ public class A3RectanguloPrincipal {
 		 * -----------------------------------------------------------------------------
 		 */
 
+		// Creación de los objetos
 		A3Rectangulo rectangulo1 = new A3Rectangulo();
 		A3Rectangulo rectangulo2 = new A3Rectangulo();
 
+		// Creación de un array para almacenar las coordenadas del primer rectángulo
 		int[] arrayr1 = new int[2];
+
+		// Creación de un array para almacenar las coordenadas del segundo rectángulo
 		int[] arrayr2 = new int[2];
 
+		// Asignación de valores
 		rectangulo1.x1 = 0;
 		rectangulo1.y1 = 0;
 		rectangulo1.x2 = 5;
@@ -32,6 +37,7 @@ public class A3RectanguloPrincipal {
 		rectangulo2.x2 = 2;
 		rectangulo2.y2 = 3;
 
+		// Cálculos para obtener perímetros y áreas
 		arrayr1[0] = rectangulo1.x1 > rectangulo1.x2 ? rectangulo1.x1 - rectangulo1.x2
 				: rectangulo1.x2 - rectangulo1.x1;
 		arrayr1[1] = rectangulo1.y1 > rectangulo1.x2 ? rectangulo1.y1 - rectangulo1.y2
@@ -42,6 +48,7 @@ public class A3RectanguloPrincipal {
 		arrayr2[1] = rectangulo2.y1 > rectangulo2.y2 ? rectangulo2.y1 - rectangulo2.y2
 				: rectangulo2.y2 - rectangulo2.y1;
 
+		// Se imprimen los datos de ambos rectángulos
 		System.out.println("PRIMER RECTÁNGULO");
 		System.out.println("Coordenadas: (" + rectangulo1.x1 + "," + rectangulo1.y1 + ") (" + rectangulo1.x2 + ","
 				+ rectangulo1.y2 + ")");

@@ -13,6 +13,7 @@ public class A2Persona {
 	 * -----------------------------------------------------------------------------
 	 */
 
+	// Variables para los atributos
 	int dni;
 	String nombre;
 	String apellidos;

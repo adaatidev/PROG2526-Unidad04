@@ -13,8 +13,8 @@ public class A1Punto {
 	 * -----------------------------------------------------------------------------
 	 */
 
+	// Variables para los atributos
 	int coordenadaX;
-
 	int coordenadaY;
 
 }
