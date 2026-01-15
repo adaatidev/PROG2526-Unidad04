@@ -19,7 +19,6 @@ public class B1Punto {
 	B1Punto(int coordenadaX, int coordenadaY) {
 		this.coordenadaX = coordenadaX;
 		this.coordenadaY = coordenadaY;
-
 	}
 
 }
