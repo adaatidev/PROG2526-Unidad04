@@ -20,8 +20,6 @@ public class HoraMain {
 		horaErronea.setMinutos(30);
 		System.out.println("Hora modificada manualmente: " + horaErronea);
 
-		System.out.println(miHora.toString());
-
 	}
 
 }

@@ -1,8 +1,14 @@
 package boletin04;
 
-public class Hora {
+/**
+ * Representa una hora en formato 24 horas
+ * 
+ * Responsabilidades: 
+ * - Mantener una hora válida 
+ * - Permitir incrementar segundos controlando los límites
+ */
 
-	// VARIABLES
+public class Hora {
 	private int hora;
 	private int minutos;
 	private int segundos;
@@ -60,11 +66,6 @@ public class Hora {
 				}
 			}
 		}
-	}
-
-	@Override
-	public String toString() {
-		return String.format("%s:%s:%s", hora, minutos, segundos);
 	}
 
 }
