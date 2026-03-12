@@ -3,9 +3,8 @@ package boletin04;
 /**
  * Representa una hora en formato 24 horas
  * 
- * Responsabilidades: 
- * - Mantener una hora válida 
- * - Permitir incrementar segundos controlando los límites
+ * Responsabilidades: - Mantener una hora válida - Permitir incrementar segundos
+ * controlando los límites
  */
 
 public class Hora {

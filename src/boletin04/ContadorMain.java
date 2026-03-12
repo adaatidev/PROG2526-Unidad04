@@ -5,6 +5,8 @@ public class ContadorMain {
 	public static void main(String[] args) {
 
 		Contador c1 = new Contador();
+		Contador c2 = new Contador(10);
+		Contador c3 = new Contador(-100);
 
 		System.out.println("Contador 1 (inicial): " + c1.getCont());
 		c1.incrementar();
@@ -19,13 +21,11 @@ public class ContadorMain {
 
 		System.out.println("---");
 
-		Contador c2 = new Contador(10);
 		System.out.println("Contador 2 (inicial 10): " + c2.getCont());
 
 		c2.setCont(-50);
 		System.out.println("Contador 2 (tras setCont -50): " + c2.getCont());
 
-		Contador c3 = new Contador(-100);
 		System.out.println("Contador 3 (creado con -100): " + c3.getCont());
 
 	}

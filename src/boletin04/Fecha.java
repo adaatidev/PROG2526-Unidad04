@@ -49,8 +49,40 @@ public class Fecha {
 		return (ano % 4 == 0 && ano % 100 != 0) || (ano % 400 == 0);
 	}
 
-//	public boolean fechaCorrecta() {
-//		
-//	}
-	
+	public boolean fechaCorrecta() {
+		boolean correcta = true;
+		if (ano < 1 || mes < 1 || mes > 12) {
+			correcta = false;
+		}
+		correcta = dia >= 1 && dia <= diasDelMes();
+		return correcta;
+	}
+
+	private int diasDelMes() {
+		int dias = 0;
+		switch (mes) {
+		case 1, 3, 5, 7, 8, 10, 12 -> dias = 31;
+		case 4, 6, 9, 11 -> dias = 30;
+		case 2 -> dias = esBisiesto() ? 29 : 28;
+		}
+		return dias;
+	}
+
+	public void diaSiguiente() {
+		dia++;
+		if (dia > diasDelMes()) {
+			dia = 1;
+			mes++;
+			if (mes > 12) {
+				mes = 1;
+				ano++;
+			}
+		}
+	}
+
+	@Override
+	public String toString() {
+		return String.format("%02d/%02d/%d", dia, mes, ano);
+	}
+
 }
