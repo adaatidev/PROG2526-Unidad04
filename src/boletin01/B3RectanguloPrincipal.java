@@ -16,25 +16,14 @@ public class B3RectanguloPrincipal {
 		 */
 
 		// Creación de los objetos
-		B3Rectangulo rectangulo1 = new B3Rectangulo();
-		B3Rectangulo rectangulo2 = new B3Rectangulo();
+		B3Rectangulo rectangulo1 = new B3Rectangulo(0, 0, 5, 5);
+		B3Rectangulo rectangulo2 = new B3Rectangulo(7, 9, 2, 3);
 
 		// Creación de un array para almacenar las coordenadas del primer rectángulo
 		int[] arrayr1 = new int[2];
 
 		// Creación de un array para almacenar las coordenadas del segundo rectángulo
 		int[] arrayr2 = new int[2];
-
-		// Asignación de valores
-		rectangulo1.x1 = 0;
-		rectangulo1.y1 = 0;
-		rectangulo1.x2 = 5;
-		rectangulo1.y2 = 5;
-
-		rectangulo2.x1 = 7;
-		rectangulo2.y1 = 9;
-		rectangulo2.x2 = 2;
-		rectangulo2.y2 = 3;
 
 		// Cálculos para obtener perímetros y áreas
 		arrayr1[0] = rectangulo1.x1 > rectangulo1.x2 ? rectangulo1.x1 - rectangulo1.x2
