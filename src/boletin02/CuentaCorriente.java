@@ -7,10 +7,10 @@ public class CuentaCorriente {
 		ESPAÑOLA, EXTRANJERA
 	};
 
-	String dni;
-	String nombre;
-	double saldo;
-	Nacionalidad nacionalidad;
+	private String dni;
+	private String nombre;
+	private double saldo;
+	private Nacionalidad nacionalidad;
 
 	// CONSTRUCTORES
 	CuentaCorriente(String dni, double saldo) {

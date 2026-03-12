@@ -15,13 +15,13 @@ public class Pizza {
 		pedida, servida
 	}
 
-	int codigo;
-	Tamano tamano;
-	Tipo tipo;
-	Estado estado;
+	private int codigo;
+	private Tamano tamano;
+	private Tipo tipo;
+	private Estado estado;
 
 	// CONSTRUCTOR
-	public Pizza(int codigo, Tamano tamano, Tipo tipo) {
+	Pizza(int codigo, Tamano tamano, Tipo tipo) {
 		this.codigo = codigo;
 		this.tamano = tamano;
 		this.tipo = tipo;

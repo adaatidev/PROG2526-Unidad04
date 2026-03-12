@@ -7,11 +7,11 @@ public class Libro {
 		Narrativo, Lírico, Dramático, Didáctico, Poético
 	};
 
-	String titulo;
-	String autor;
-	int ejemplares;
-	int prestados;
-	Generos genero;
+	private String titulo;
+	private String autor;
+	private int ejemplares;
+	private int prestados;
+	private Generos genero;
 
 	// CONSTRUCTORES
 	Libro(String titulo, String autor) {

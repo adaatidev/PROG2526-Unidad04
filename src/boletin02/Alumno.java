@@ -3,8 +3,8 @@ package boletin02;
 public class Alumno {
 
 	// VARIABLES
-	String nombre;
-	double media;
+	private String nombre;
+	private double media;
 
 	// CONSTRUCTOR
 	Alumno(String nombre, double media) {
