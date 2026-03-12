@@ -2,15 +2,15 @@ package boletin02;
 
 public class Libro {
 
-	String titulo;
-	String autor;
-	int ejemplares;
-	int prestados;
-
+	// VARIABLES
 	enum Generos {
 		Narrativo, Lírico, Dramático, Didáctico, Poético
 	};
 
+	String titulo;
+	String autor;
+	int ejemplares;
+	int prestados;
 	Generos genero;
 
 	// CONSTRUCTORES
@@ -34,7 +34,7 @@ public class Libro {
 		this.genero = genero;
 	}
 
-	// GETTERS/SETTERS
+	// GETTERS Y SETTERS
 	public String getTitulo() {
 		return titulo;
 	}

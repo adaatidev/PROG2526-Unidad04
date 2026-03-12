@@ -4,12 +4,19 @@ public class Alumno {
 
 	// VARIABLES
 	String nombre;
+	double media;
 
+	// CONSTRUCTOR
+	Alumno(String nombre, double media) {
+		this.nombre = nombre;
+		this.media = media;
+	}
+
+	// GETTERS Y SETTERS
 	public String getNombre() {
 		return nombre;
 	}
 
-	// GETTERS/SETTERS
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
@@ -22,14 +29,7 @@ public class Alumno {
 		this.media = media;
 	}
 
-	double media;
-
-	Alumno(String nombre, double media) {
-		this.nombre = nombre;
-		this.media = media;
-	}
-
-	// MÉTODOS
+	// MÉTODO
 	@Override
 	public String toString() {
 		return String.format("%s \t %s", nombre, media);

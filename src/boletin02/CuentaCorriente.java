@@ -2,14 +2,14 @@ package boletin02;
 
 public class CuentaCorriente {
 
-	String dni;
-	String nombre;
-	double saldo;
-
+	// VARIABLES
 	enum Nacionalidad {
 		ESPAÑOLA, EXTRANJERA
 	};
 
+	String dni;
+	String nombre;
+	double saldo;
 	Nacionalidad nacionalidad;
 
 	// CONSTRUCTORES
@@ -31,34 +31,33 @@ public class CuentaCorriente {
 		this.nacionalidad = nacionalidad;
 	}
 
-	// GET
+	// GETTERS Y SETTERS
 	public String getDni() {
 		return dni;
+	}
+
+	public void setDni(String dni) {
+		this.dni = dni;
 	}
 
 	public String getNombre() {
 		return nombre;
 	}
 
-	public double getSaldo() {
-		return saldo;
-	}
-
-	public Nacionalidad getNacionalidad() {
-		return nacionalidad;
-	}
-
-	// SET
-	public void setDni(String dni) {
-		this.dni = dni;
-	}
-
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
 
+	public double getSaldo() {
+		return saldo;
+	}
+
 	public void setSaldo(double saldo) {
 		this.saldo = saldo;
+	}
+
+	public Nacionalidad getNacionalidad() {
+		return nacionalidad;
 	}
 
 	public void setNacionalidad(Nacionalidad nacionalidad) {

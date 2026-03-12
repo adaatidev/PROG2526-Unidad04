@@ -61,7 +61,7 @@ public class Pizza {
 		this.estado = estado;
 	}
 
-	// MÉTODOS
+	// MÉTODO
 	@Override
 	public String toString() {
 		return String.format("%s - %s - %s - %s", codigo, tamano, tipo, estado);
