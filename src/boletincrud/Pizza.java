@@ -1,4 +1,4 @@
-package boletin02;
+package boletincrud;
 
 public class Pizza {
 
